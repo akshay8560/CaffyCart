@@ -1,0 +1,19 @@
+buildscript {
+    dependencies {
+
+    classpath 'com.google.gms:google-services:4.3.10'
+    }
+}// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '7.2.0' apply false
+    id 'com.android.library' version '7.2.0' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+/* the dependencies and all the other things got placed in the bumblebee update
+* in android studio from build.gradle(project) to settings.gradle
+* to read more about it the go this link (https://developer.android.com/studio/releases/gradle-plugin#groovy) and
+* then to Repository settings in settings.gradle file heading*/

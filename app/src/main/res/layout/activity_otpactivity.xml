@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8DC"
+    tools:context=".OTPActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/redressed_regular"
+        android:text="@string/otp"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/chakrapetch_medium"
+        android:gravity="center"
+        android:text="@string/otpText"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4">
+
+        <EditText
+            android:id="@+id/OTP1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/otp_style"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#80000000"
+            android:textSize="30sp"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/OTP2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/otp_style"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#80000000"
+            android:textSize="30sp"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/OTP3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/otp_style"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#80000000"
+            android:textSize="30sp"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/OTP4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/otp_style"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#80000000"
+            android:textSize="30sp"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/OTP5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/otp_style"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#80000000"
+            android:textSize="30sp"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/OTP6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/otp_style"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#80000000"
+            android:textSize="30sp"
+            tools:ignore="LabelFor" />
+    </TableRow>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/verifyOTP"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text="@string/verifyOTP"
+        android:textAllCaps="false"
+        android:textColor="#FFF8DC"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resendOTP"
+        app:layout_constraintVertical_bias="0.08"
+        app:neumorph_backgroundColor="#D6AF9C"
+        app:neumorph_shadowColorDark="#a0522d"
+        app:neumorph_shadowElevation="5dp">
+
+    </soup.neumorphism.NeumorphButton>
+
+    <TextView
+        android:id="@+id/resendOTP"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/chakrapetch_medium"
+        android:gravity="center"
+        android:text="@string/resendOTP"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow"
+        app:layout_constraintVertical_bias="0.075" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".OrderCreatingActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/redressed_regular"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/coffee_counter_heading"
+            android:textColor="@color/black"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/name_field"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="#fff"
+                android:fontFamily="@font/balsamsans_bold"
+                android:hint="@string/user_name_text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/chakrapetch_medium"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/coffee_type"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_coffee_list"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_margin="5dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/coffee_list_activity" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/chakrapetch_medium"
+                android:gravity="center"
+                android:text="@string/text_view_toppings"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/Whipped_cream_checkBox"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:checked="false"
+                android:fontFamily="@font/chakrapetch_medium"
+                android:text="@string/whipped_cream_check_box"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/Chocolate_checkBox"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:checked="false"
+                android:fontFamily="@font/chakrapetch_medium"
+                android:text="@string/chocolate_checkbox"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:fontFamily="@font/chakrapetch_medium"
+                android:gravity="center"
+                android:text="@string/select_coffee_number"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner_coffee_select"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:backgroundTint="#000"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:fontFamily="@font/chakrapetch_medium"
+                android:gravity="center"
+                android:text="@string/cup_size"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner_oz_select"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:backgroundTint="#000"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/chakrapetch_medium"
+                android:gravity="center"
+                android:text="@string/quantity"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="45sp" />
+
+            <soup.neumorphism.NeumorphButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:onClick="inc"
+                style="@style/Widget.Neumorph.Button"
+                app:neumorph_shadowElevation="2.5dp"
+                android:text="@string/increment"
+                app:neumorph_backgroundColor="#D6AF9C"
+                app:neumorph_shadowColorDark="#a0522d"
+                android:textAlignment="center"
+                app:neumorph_shapeType="flat"
+                android:textSize="30sp"
+                tools:ignore="UsingOnClickInXml">
+            </soup.neumorphism.NeumorphButton>
+
+            <TextView
+
+                android:id="@+id/quantity_text_view"
+                android:layout_width="75dp"
+                android:layout_height="60dp"
+                android:background="@drawable/otp_style"
+                android:padding="8dp"
+                android:text="@string/zero"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <soup.neumorphism.NeumorphButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:onClick="dec"
+                style="@style/Widget.Neumorph.Button"
+                app:neumorph_shadowElevation="2.5dp"
+                android:text="@string/decrement"
+                app:neumorph_backgroundColor="#D6AF9C"
+                app:neumorph_shadowColorDark="#a0522d"
+                android:textAlignment="center"
+                app:neumorph_shapeType="flat"
+                android:textSize="30sp"
+                tools:ignore="UsingOnClickInXml">
+            </soup.neumorphism.NeumorphButton>
+
+        </LinearLayout>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/showOrderSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Neumorph.Button"
+            app:neumorph_backgroundColor="#D2691E"
+            app:neumorph_shadowColorDark="#a47467"
+            app:neumorph_shadowElevation="5dp"
+            android:textStyle="bold"
+            app:neumorph_shapeType="flat"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/signika"
+            android:padding="10dp"
+            android:text="@string/place_order_button"
+            android:textSize="30sp">
+        </soup.neumorphism.NeumorphButton>
+
+    </LinearLayout>
+
+</ScrollView>

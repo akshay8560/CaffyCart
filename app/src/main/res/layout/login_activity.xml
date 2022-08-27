@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8DC"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#a47467"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/threeButton"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/button"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/topBar"
+        app:layout_constraintEnd_toEndOf="@+id/topBar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/topBar"
+        app:layout_constraintTop_toTopOf="@+id/topBar"
+        app:srcCompat="@drawable/ic_baseline_linear_scale_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/redressed_regular"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="40dp"
+        android:backgroundTint="#FFE4C4"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="40dp"
+        android:backgroundTint="#FFE4C4"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47">
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toBottomOf="@+id/topBar"
+        app:layout_constraintEnd_toStartOf="@+id/threeButton"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="@+id/topBar"
+        app:layout_constraintTop_toTopOf="@+id/topBar"
+        app:srcCompat="@drawable/caffy_cart_logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/topBar"
+        app:layout_constraintEnd_toStartOf="@+id/threeButton"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/topBar" />
+
+    <EditText
+        android:id="@+id/enterLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/style1"
+        android:elevation="10dp"
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="center"
+        android:hint="@string/email"
+        android:importantForAutofill="yes"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="#757575"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/enterLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:autofillHints="password"
+        android:background="@drawable/style2"
+        android:elevation="10dp"
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:importantForAutofill="yes"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="#757575"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:passwordToggleEnabled="true"
+        tools:ignore="TextContrastCheck" />
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.3">
+
+    </TableRow>
+
+    <soup.neumorphism.NeumorphFloatingActionButton
+        android:id="@+id/loginWithFacebookBtn"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:contentDescription="@string/facebook_login"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow2"
+        app:layout_constraintEnd_toEndOf="@+id/tableRow2"
+        app:layout_constraintStart_toStartOf="@+id/tableRow2"
+        app:layout_constraintTop_toTopOf="@+id/tableRow2"
+        app:neumorph_backgroundColor="#EDDDD9"
+        app:neumorph_shadowColorDark="#a47467"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="flat">
+
+    </soup.neumorphism.NeumorphFloatingActionButton>
+
+    <soup.neumorphism.NeumorphFloatingActionButton
+        android:id="@+id/loginWithGithubBtn"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:contentDescription="@string/github_login"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/tableRow2"
+        app:layout_constraintTop_toTopOf="@+id/tableRow2"
+        app:neumorph_backgroundColor="#EDDDD9"
+        app:neumorph_shadowColorDark="#a47467"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="flat">
+
+    </soup.neumorphism.NeumorphFloatingActionButton>
+
+    <soup.neumorphism.NeumorphFloatingActionButton
+        android:id="@+id/loginWithGoogleBtn"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/google_login"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow2"
+        app:layout_constraintEnd_toEndOf="@+id/tableRow2"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tableRow2"
+        app:neumorph_backgroundColor="#EDDDD9"
+        app:neumorph_shadowColorDark="#a47467"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="flat">
+
+    </soup.neumorphism.NeumorphFloatingActionButton>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/google_photo"
+        app:layout_constraintBottom_toBottomOf="@+id/loginWithGoogleBtn"
+        app:layout_constraintEnd_toEndOf="@+id/loginWithGoogleBtn"
+        app:layout_constraintStart_toStartOf="@+id/loginWithGoogleBtn"
+        app:layout_constraintTop_toTopOf="@+id/loginWithGoogleBtn"
+        app:srcCompat="@drawable/google_logo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/facebook_photo"
+        app:layout_constraintBottom_toBottomOf="@+id/loginWithFacebookBtn"
+        app:layout_constraintEnd_toEndOf="@+id/loginWithFacebookBtn"
+        app:layout_constraintStart_toStartOf="@+id/loginWithFacebookBtn"
+        app:layout_constraintTop_toTopOf="@+id/loginWithFacebookBtn"
+        app:srcCompat="@drawable/facebook_logo"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/github_photo"
+        app:layout_constraintBottom_toBottomOf="@+id/loginWithGithubBtn"
+        app:layout_constraintEnd_toEndOf="@+id/loginWithGithubBtn"
+        app:layout_constraintStart_toStartOf="@+id/loginWithGithubBtn"
+        app:layout_constraintTop_toTopOf="@+id/loginWithGithubBtn"
+        app:srcCompat="@drawable/github_logo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/opensans_light"
+        android:gravity="center"
+        android:text="@string/login_with"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/loginBtn"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:fontFamily="@font/signika"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="#EDDDD9"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow2"
+        app:layout_constraintVertical_bias="0.05"
+        app:neumorph_backgroundColor="#D2691E"
+        app:neumorph_shadowColorDark="#a47467"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="flat" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/redirectToSignUpBtn"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/signika"
+        android:text="@string/not_acc"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow2"
+        app:layout_constraintVertical_bias="0.9"
+        app:neumorph_backgroundColor="#F4A460"
+        app:neumorph_shadowColorDark="#a47467"
+        app:neumorph_shadowElevation="3dp"
+        tools:ignore="TextContrastCheck">
+
+    </soup.neumorphism.NeumorphButton>
+
+    <TextView
+        android:id="@+id/forgotPasswordButton"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/balsamsans_bold"
+        android:gravity="center"
+        android:text="@string/forgot_password"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.025" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

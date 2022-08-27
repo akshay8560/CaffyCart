@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "253994900772",
+    "firebase_url": "https://cafee-cart-default-rtdb.firebaseio.com",
+    "project_id": "cafee-cart",
+    "storage_bucket": "cafee-cart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253994900772:android:2f6fd22e4e19dbe38867b1",
+        "android_client_info": {
+          "package_name": "com.example.caffycart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253994900772-hddp45g99ua9sh9grf3naa45eiacqocl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.caffycart",
+            "certificate_hash": "79b397731be8610c5b4ef53b584cc5ec00994221"
+          }
+        },
+        {
+          "client_id": "253994900772-c6g437us5hqprk2ja1j0ar4aqpnfi92v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDarrkY25nohtyk24XYiKGxGEp0W7CMrG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "253994900772-c6g437us5hqprk2ja1j0ar4aqpnfi92v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

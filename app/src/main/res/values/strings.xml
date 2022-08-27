@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Caffy Cart</string>
+    <string name="button">threeDots</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="logo">CaffyCart Logo</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="google_login">Google Login</string>
+    <string name="facebook_login">Facebook Login</string>
+    <string name="github_login">Github Login</string>
+    <string name="google_photo">Google Photo</string>
+    <string name="facebook_photo">Facebook Photo</string>
+    <string name="github_photo">GitHub Photo</string>
+    <string name="login_with">Login with</string>
+    <string name="not_acc">Does not have an Account? SignUp</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="full_name">Full Name</string>
+    <string name="age">Age</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="date_of_birth">DOB: DD/MM/YYYY</string>
+    <string name="coffee_counter_heading">Coffee Counter</string>
+    <string name="place_order_button">Place Order</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="increment">+</string>
+    <string name="decrement">-</string>
+    <string name="user_name">Welcome to the coffee shop!</string>
+    <string name="text_view_toppings">Toppings</string>
+    <string name="whipped_cream_check_box">Whipped cream</string>
+    <string name="chocolate_checkbox">Chocolate</string>
+    <string name="molasses_checkbox">Molasses</string>
+    <string name="coffee_type">List of Coffee offered (Scroll Menu)</string>
+    <string name="quantity">Quantity</string>
+    <string name="select_coffee_number">Coffee Type</string>
+    <string name="cup_size">Cup Size</string>
+    <string name="user_name_text">Enter your name</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="price">0.00 Rs</string>
+    <string name="place_order">Pay</string>
+    <string name="facebook_app_id">2745116572464862</string>
+    <string name="fb_login_protocol_scheme">fb2745116572464862</string>
+    <string name="facebook_client_token">41bec17c309c64c9f37b5abbf707a2cd</string>
+    <string name="myDefault_web_client_id">34806338637-2q1m4kq4fa00gt5dq0i1lfkirfef0612.apps.googleusercontent.com</string>
+    <string name="otp">OTP Verification</string>
+    <string name="otpText">A One Time Password(OTP) has been sent to your Phone Number</string>
+    <string name="resendOTP">Did not receive the OTP, click to <b>RESEND</b></string>
+    <string name="verifyOTP">Verify OTP</string>
+    <string name="zero">0</string>
+    <string name="logout">Logout</string>
+
+    <string-array name="cup_size">
+        <item>3oz</item>
+        <item>4.5oz</item>
+        <item>5.5oz</item>
+        <item>12oz</item>
+        <item>14oz</item>
+        <item>16oz</item>
+        <item>20oz</item>
+    </string-array>
+    <string-array name="coffee_type">
+        <item>Affogato</item>
+        <item>Americano</item>
+        <item>Black</item>
+        <item>Cappuccino</item>
+        <item>Cortado</item>
+        <item>Doppio</item>
+        <item>Espresso</item>
+        <item>Flat White</item>
+        <item>Galão</item>
+        <item>Irish</item>
+        <item>Latte</item>
+        <item>Lungo</item>
+        <item>Macchiato</item>
+        <item>Mocha</item>
+        <item>Red Eye</item>
+    </string-array>
+
+</resources>
