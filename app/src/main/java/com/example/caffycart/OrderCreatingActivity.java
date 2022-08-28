@@ -28,6 +28,7 @@ public class OrderCreatingActivity extends AppCompatActivity {
 
     private int quantity = 1;
     RelativeLayout rl;
+    boolean isSelectMode=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
